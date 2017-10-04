@@ -4,8 +4,6 @@ const path = require('path');
 const app = express();
 
 // Server routes...
-app.het('/hello', (req, res) => res.send({ hi: 'there'}));
-
 
 if (process.env.NODE_ENV !== 'production') { //development
   const webpackMiddleware = require('webpack-dev-middleware');
